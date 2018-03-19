@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+script>
+
+  var num = prompt("give me a 4 digit number that I'll divide out to thousands, hundreds, tens, and ones places:);
+  
+  //2468 for example
+  console.log(num + " is the number you entered")
+  
+  //1000's
+  var thou_mod = num%1000;//2468 % 100 = 468 = thou mod
+  var thou = num - thou_mod; // 2468 - 468 = 2000
+  var thou_real = thou/1000; //2000/1000 = 2
+  console.log (thou_real + "thousands");
+  
+  //100's
+  var threedigit = thou_mod; // = 468
+  var hund_mod = threedigit%100; // 468%100 = 68
+  var hun = threedigit - hund_mod; //468-68 = 400
+  var hund_real = hund/100; //400/100 = 4
+  console.log (hund_real + " hundreds");
+  
+  //10's
+  var twodigit = hund_mod;
+  var tens_mod = twodigit%10; //68%10 = 8
+  var tens = twodigit-tens_mod; // 68-8 = 60
+  var tens_real = tens/10; //50/10 = 6
+  console.log (tens_real + " tens ");
+  
+  //1's
+  console.log tens_mod + " ones");
+</script>
+</body>
+</html>
