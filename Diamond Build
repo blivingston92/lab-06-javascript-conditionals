@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+console.log("   /\\")
+console.log("  /  \\")
+console.log(" / So \\")
+console.log("/ Cool \\")
+console.log("\  Man //")
+console.log(" \    //")
+console.log("  \  //")
+console.log("   \//")
+// your JavaScript goes here!
+</script>
+</body>
+</html>
